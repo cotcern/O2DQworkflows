@@ -7,7 +7,7 @@
         "start-value-enumeration": "0",
         "end-value-enumeration": "-1",
         "step-value-enumeration": "1",
-        "aod-file": "@infiles/run3pilotMC_LHC21k6.txt"
+        "aod-file": "AO2D.root"
     },
     "internal-dpl-aod-spawner": "",
     "internal-dpl-aod-index-builder": "",
@@ -241,6 +241,9 @@
         "processFilterPPTiny": "false",
         "processDummy": "false"
     },
+    "collision-converter": {
+        "doNotSwap": "true"
+    },
     "table-maker": {
         "cfgEventCuts": "eventStandardNoINT7",
         "cfgBarrelTrackCuts": "jpsiO2MCdebugCuts2,jpsiO2MCdebugCuts3,jpsiO2MCdebugCuts,kaonPID",
@@ -270,13 +273,13 @@
         "processBarrelOnlyWithCov": "false",
         "processBarrelOnly": "false",
         "processMuonOnlyWithCent": "false",
-        "processMuonOnlyWithCov": "false",
+        "processMuonOnlyWithCov": "true",
         "processMuonOnly": "false",
         "processMuonOnlyWithQvector": "false",
         "processMuonOnlyWithFilter": "false",
         "processAmbiguousMuonOnly": "false",
         "processAmbiguousBarrelOnly": "false",
-        "processOnlyBCs": "true"
+        "processOnlyBCs": "false"
     },
     "internal-dpl-aod-global-analysis-file-sink": "",
     "internal-dpl-aod-writer": ""
